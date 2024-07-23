@@ -12,7 +12,7 @@ const inventory = [
 ]
 
 const isBargain = (inventoryItem) => {
-    if (item.price < 50.00) {
+    if (inventoryItem.price < 50.00) {
         return true
     }
 
@@ -20,7 +20,7 @@ const isBargain = (inventoryItem) => {
 }
 
 const isClothing = (item) => {
-    if (item.clothing.type === "clothing") {
+    if (item.type === "clothing") {
         return true
     }
 
@@ -28,7 +28,7 @@ const isClothing = (item) => {
 }
 
 const isGear = (gear) => {
-    if (gear.item.price === "surfboard") {
+    if (gear.type === "surfboard") {
         return true
     }
 
@@ -36,7 +36,7 @@ const isGear = (gear) => {
 }
 
 for (const surfProduct of inventory) {
-    console.log(product.description)
+    console.log(surfProduct.description)
 
     if (isBargain(surfProduct)) {
         console.log("\t* Is currently on sale")
@@ -48,4 +48,3 @@ for (const surfProduct of inventory) {
         console.log("\t* Is a surfing gear product")
     }
 }
-
