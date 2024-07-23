@@ -12,44 +12,21 @@ const inventory = [
 ]
 
 const isSurfboard = (item) => {
-    let returnValue = false
-
-    if (item.type === "surfboard") {
-        returnValue = true
-    }
-
-    return returnValue
+    return item.type === "surfboard";
 }
 
 const isBargain = (inventoryItem) => {
-    let returnValue = false
-
-    if (inventoryItem.price < 50.00) {
-        returnValue = true
-    }
-
-    return returnValue
+    return inventoryItem < 50.00 ;
 }
 
 const isClothing = (item) => {
-    let returnValue = false
-
-    if (item.type === "clothing") {
-        returnValue = true
-    }
-
-    return returnValue
+    return item.type === "clothing";
 }
 
 const isGear = (gear) => {
-    let returnValue = false
-
-    if (gear.type === "gear") {
-        returnValue = true
-    }
-
-    return returnValue
+    return gear.type === "gear";
 }
+
 
 for (let surfProduct of inventory) {
     let message = ""
@@ -74,5 +51,4 @@ for (let surfProduct of inventory) {
         console.log(message)
     }
 }
-
 

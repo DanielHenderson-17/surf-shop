@@ -51,10 +51,9 @@ const isGear = (gear) => {
     return returnValue
 }
 
-const convertDataForAccounting = (item) => {
-    let upperDescription = item.description.toUpperCase()
-    let upperType = item.type.toUpperCase()
-    return `${upperDescription} - ${upperType} - ${item.price}`
+const convertDataForAccounting = (product) => {
+    const allUpperCase = `${product.description.toUpperCase()} - ${product.type.toUpperCase()} - ${product.price}`
+    return allUpperCase
 }
 
 for (let surfProduct of inventory) {
