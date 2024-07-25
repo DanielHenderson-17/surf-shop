@@ -1,9 +1,4 @@
-// productReport.js
-
-// Destructuring assignment to import the inventory array from the "data" module
 const { inventory } = require("./data");
-
-// Destructuring assignment to import specific functions from the "functions" module
 const { isBargain, isClothing, isGear, isSurfboard } = require("./functions");
 
 // Iterate over each product in the inventory array

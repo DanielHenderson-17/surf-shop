@@ -1,9 +1,4 @@
-// accounting.js
-
-// Destructuring assignment to import the inventory array from the "data" module
 const { inventory } = require("./data");
-
-// Destructuring assignment to import the convertDataForAccounting function from the "functions" module
 const { convertDataForAccounting } = require("./functions");
 
 // Iterate over each product in the inventory array
